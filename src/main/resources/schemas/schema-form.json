@@ -1,0 +1,19 @@
+{
+  "type" : "object",
+  "id" : "urn:jsonschema:io:gravitee:policy:blank:configuration:BlankPolicyConfiguration",
+  "properties" : {
+    "blankText" : {
+      "type" : "string"
+    },
+    "blankArray" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "blankEnum" : {
+      "type" : "string",
+      "enum" : [ "VAL1", "VAL2" ]
+    }
+  }
+}
