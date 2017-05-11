@@ -13,12 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.policy.blank;
+package io.gravitee.policy.latency;
 
-import io.gravitee.gateway.api.ExecutionContext;
-import io.gravitee.gateway.api.expression.TemplateContext;
-import io.gravitee.gateway.api.expression.TemplateEngine;
-import io.gravitee.gateway.api.stream.exception.TransformationException;
+import static org.mockito.MockitoAnnotations.initMocks;
+
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -26,7 +24,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.mockito.MockitoAnnotations.initMocks;
+import io.gravitee.gateway.api.ExecutionContext;
+import io.gravitee.gateway.api.expression.TemplateContext;
+import io.gravitee.gateway.api.expression.TemplateEngine;
+import io.gravitee.gateway.api.stream.exception.TransformationException;
 
 /**
  * @author Azize ELAMRANI (azize.elamrani at graviteesource.com)
@@ -34,7 +35,8 @@ import static org.mockito.MockitoAnnotations.initMocks;
  */
 @RunWith(MockitoJUnitRunner.class)
 @Ignore
-public class BlankPolicyTest {
+public class LatencyPolicyTest
+{
 
     @Mock
     protected ExecutionContext executionContext;

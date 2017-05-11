@@ -1,19 +1,13 @@
 {
   "type" : "object",
-  "id" : "urn:jsonschema:io:gravitee:policy:blank:configuration:BlankPolicyConfiguration",
+  "id" : "urn:jsonschema:io:gravitee:policy:latency:configuration:LatencyPolicyConfiguration",
   "properties" : {
-    "blankText" : {
-      "type" : "string"
+    "time" : {
+      "type" : "integer"
     },
-    "blankArray" : {
-      "type" : "array",
-      "items" : {
-        "type" : "string"
-      }
-    },
-    "blankEnum" : {
+    "timeUnit" : {
       "type" : "string",
-      "enum" : [ "VAL1", "VAL2" ]
+      "enum" : [ "NANOSECONDS", "MICROSECONDS", "MILLISECONDS", "SECONDS", "MINUTES", "HOURS", "DAYS" ]
     }
   }
 }

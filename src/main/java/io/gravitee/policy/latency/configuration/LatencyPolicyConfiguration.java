@@ -13,12 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.gravitee.policy.blank.configuration;
+package io.gravitee.policy.latency.configuration;
+
+import java.util.concurrent.TimeUnit;
+
+import io.gravitee.policy.api.PolicyConfiguration;
 
 /**
  * @author Azize ELAMRANI (azize.elamrani at graviteesource.com)
  * @author GraviteeSource Team
  */
-public enum BlankEnum {
-    VAL1, VAL2
+public class LatencyPolicyConfiguration implements PolicyConfiguration {
+
+    private long time;
+    private TimeUnit timeUnit;
+
+    public long getTime() {
+        return time;
+    }
+
+    public void setTime(long time) {
+        this.time = time;
+    }
+
+    public TimeUnit getTimeUnit() {
+        return timeUnit;
+    }
+
+    public void setTimeUnit(TimeUnit timeUnit) {
+        this.timeUnit = timeUnit;
+    }
 }

@@ -21,11 +21,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.gravitee.policy</groupId>
-    <artifactId>gravitee-policy-blank</artifactId>
+    <artifactId>gravitee-policy-latency</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Gravitee IO - Policy - Blank</name>
-    <description>Description of the Blank Gravitee Policy</description>
+    <name>Gravitee IO - Policy - Latency</name>
+    <description>Description of the Latency Gravitee Policy</description>
 
     <parent>
         <groupId>io.gravitee</groupId>
@@ -119,7 +119,7 @@
                         </goals>
                         <configuration>
                             <includes>
-                                <include>io/gravitee/policy/blank/configuration/BlankPolicyConfiguration.class</include>
+                                <include>io/gravitee/policy/latency/configuration/LatencyPolicyConfiguration.class</include>
                             </includes>
                             <outputDirectory>${json-schema-generator-maven-plugin.outputDirectory}</outputDirectory>
                         </configuration>
