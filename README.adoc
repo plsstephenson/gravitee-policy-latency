@@ -1,11 +1,11 @@
-= Latency Policy
+= Latency policy
 
 ifdef::env-github[]
 image:https://ci.gravitee.io/buildStatus/icon?job=gravitee-io/gravitee-policy-latency/master["Build status", link="https://ci.gravitee.io/job/gravitee-io/job/gravitee-policy-latency"]
 image:https://badges.gitter.im/Join Chat.svg["Gitter", link="https://gitter.im/gravitee-io/gravitee-io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
 endif::[]
 
-== Scope
+== Phase
 
 [cols="2*", options="header"]
 |===
@@ -23,22 +23,23 @@ endif::[]
 
 == Configuration
 
-You can configure the policy with the following options :
+You can configure the policy with the following options:
 
 |===
 |Property |Required |Description |Type| Default
 
 .^|scope
 ^.^|X
-|The execution scope (`request` or `response`).
+|Execution scope (`request` or `response`).
 ^.^|string
 ^.^|`REQUEST`
 
 
 |===
 
+== Errors
 
-== Http Status Code
+== HTTP status code
 
 |===
 |Code |Message
