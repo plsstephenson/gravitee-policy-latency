@@ -22,7 +22,7 @@
 
     <groupId>io.gravitee.policy</groupId>
     <artifactId>gravitee-policy-latency</artifactId>
-    <version>1.4.0</version>
+    <version>1.4.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Gravitee.io APIM - Policy - Latency</name>
     <description>Description of the Latency Gravitee Policy</description>
